@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090611">
+  <title>Kawaii World — Anime Universe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span> KAWAII<span>WORLD</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#anime">Anime</a>
+      <a href="#characters">Characters</a>
+      <a href="#wallpapers">Wallpapers</a>
+    </nav>
+    <a class="top-cta" href="#anime">Explore <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT ANIME OBSESSION</div>
+        <h1>Enter a world<br> beyond <span>reality.</span></h1>
+        <p class="hero-description">Discover unforgettable stories, iconic characters, and beautiful worlds. Your anime journey starts here.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#anime">Explore Anime <span>↗</span></a>
+          <a class="button secondary" href="#characters">Meet Characters</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>∞</strong><span>Worlds to explore</span></div>
+          <div class="stat-line"></div>
+          <div><strong>01</strong><span>Your anime hub</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative anime-inspired artwork">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-card">
+          <div class="art-sky"></div>
+          <div class="moon"></div>
+          <div class="mountain mountain-back"></div>
+          <div class="mountain mountain-front"></div>
+          <div class="art-caption"><span>FEATURED UNIVERSE</span><strong>Dreams have no limits.</strong></div>
+          <div class="art-badge">✦ ANIME<br>UNIVERSE</div>
+        </div>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span><span class="spark spark-c">✦</span>
+      </div>
+    </section>
+
+    <section class="section" id="anime">
+      <div class="section-heading">
+        <div><div class="eyebrow">FIND YOUR NEXT ADVENTURE</div><h2>Explore <span>Anime</span></h2></div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search anime..." aria-label="Search anime"></label>
+      </div>
+      <div class="filter-row" id="filters">
+        <button class="filter active" data-filter="all">All anime</button>
+        <button class="filter" data-filter="fantasy">Fantasy</button>
+        <button class="filter" data-filter="action">Action</button>
+        <button class="filter" data-filter="adventure">Adventure</button>
+      </div>
+      <div class="anime-grid" id="animeGrid">
+        <article class="anime-card" data-tags="fantasy adventure" data-name="re zero starting life in another world">
+          <div class="poster poster-rezero"><span class="poster-label">FANTASY</span><div class="poster-symbol">❄</div><div class="poster-title">RE:ZERO</div><div class="poster-subtitle">Starting Life in Another World</div></div>
+          <div class="card-info"><div><h3>Re:Zero</h3><p>Fantasy · Drama · Adventure</p></div><span class="card-arrow">↗</span></div>
+        </article>
+        <article class="anime-card" data-tags="action fantasy adventure" data-name="that time i got reincarnated as a slime tensura">
+          <div class="poster poster-slime"><span class="poster-label">FANTASY</span><div class="poster-symbol">✧</div><div class="poster-title">TENSURA</div><div class="poster-subtitle">That Time I Got Reincarnated as a Slime</div></div>
+          <div class="card-info"><div><h3>That Time I Got Reincarnated as a Slime</h3><p>Action · Fantasy · Isekai</p></div><span class="card-arrow">↗</span></div>
+        </article>
+        <article class="anime-card" data-tags="action adventure" data-name="demon slayer kimetsu no yaiba">
+          <div class="poster poster-demon"><span class="poster-label">ACTION</span><div class="poster-symbol">刃</div><div class="poster-title">DEMON SLAYER</div><div class="poster-subtitle">Kimetsu no Yaiba</div></div>
+          <div class="card-info"><div><h3>Demon Slayer</h3><p>Action · Supernatural</p></div><span class="card-arrow">↗</span></div>
+        </article>
+        <article class="anime-card" data-tags="action fantasy" data-name="solo leveling">
+          <div class="poster poster-solo"><span class="poster-label">ACTION</span><div class="poster-symbol">影</div><div class="poster-title">SOLO LEVELING</div><div class="poster-subtitle">Arise from the shadows</div></div>
+          <div class="card-info"><div><h3>Solo Leveling</h3><p>Action · Fantasy</p></div><span class="card-arrow">↗</span></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No anime found. Try another search ✦</p>
+    </section>
+
+    <section class="character-section" id="characters">
+      <div class="section-heading">
+        <div><div class="eyebrow">FAN FAVOURITES</div><h2>Meet the <span>Characters</span></h2></div>
+        <span class="section-note">A few icons from beloved worlds ✦</span>
+      </div>
+      <div class="character-grid">
+        <article class="character-card"><div class="character-icon icon-subaru">✦</div><div><h3>Natsuki Subaru</h3><p>Re:Zero · Determined hero</p></div><span>01</span></article>
+        <article class="character-card"><div class="character-icon icon-rem">❄</div><div><h3>Rem</h3><p>Re:Zero · Oni maid</p></div><span>02</span></article>
+        <article class="character-card"><div class="character-icon icon-rimuru">✧</div><div><h3>Rimuru Tempest</h3><p>Tensura · Slime ruler</p></div><span>03</span></article>
+        <article class="character-card"><div class="character-icon icon-nezuko">花</div><div><h3>Nezuko Kamado</h3><p>Demon Slayer · Demon girl</p></div><span>04</span></article>
+      </div>
+    </section>
+
+    <section class="section wallpapers" id="wallpapers">
+      <div class="section-heading">
+        <div><div class="eyebrow">SET THE MOOD</div><h2>Wallpaper <span>Gallery</span></h2></div>
+        <p class="section-note">Original anime-inspired backgrounds made with CSS.</p>
+      </div>
+      <div class="wallpaper-grid">
+        <div class="wallpaper wall-one"><span>01 / MOONLIGHT</span><strong>After dark</strong></div>
+        <div class="wallpaper wall-two"><span>02 / DREAMSCAPE</span><strong>Another world</strong></div>
+        <div class="wallpaper wall-three"><span>03 / NEON CITY</span><strong>Midnight glow</strong></div>
+      </div>
+    </section>
+
+    <section class="join-banner">
+      <div><div class="eyebrow">WELCOME, FELLOW OTAKU</div><h2>Your story starts <span>here.</span></h2><p>Save this page, explore your favourites, and make this anime corner your own.</p></div>
+      <a class="button primary" href="#home">Back to top ↑</a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">✦</span> KAWAII<span>WORLD</span></a><p>Fan-made anime discovery concept · Not affiliated with anime studios.</p><a href="#home" class="back-top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
